@@ -135,3 +135,31 @@ h1 { font-size: 20px; margin: 10px 0 5px; color: #222; }
 .buy-btn:hover {
     background-color: #333;
 }
+/* Основной контейнер слайдера */
+.swiper {
+    width: 100%;
+    max-width: 500px;         /* Ограничиваем ширину, чтобы на ПК не растягивался */
+    height: 350px;            /* Фиксированная высота для фото */
+    border-radius: 12px;      /* Скругление углов, как на авто.ру */
+    margin: 20px auto;        /* Центрируем слайдер по горизонтали */
+}
+
+/* Настройки картинок внутри слайдов */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* Фото заполняет блок без искажения пропорций */
+    display: block;
+}
+
+/* Цвет точек пагинации внизу слайдера */
+.swiper-pagination-bullet-active {
+    background: #007aff !important; /* Синий цвет активной точки */
+}
+
+/* Цвет стрелок перелистывания */
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #007aff;           /* Синий цвет для стрелочек */
+    transform: scale(0.7);    /* Делаем стрелки чуть меньше и аккуратнее */
+}

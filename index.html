@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог автомобилей</title>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://jsdelivr.net" />
 </head>
 <body>
-
+    <div class="swiper">
+  <div class="swiper-wrapper">
+    <!-- Каждая картинка оборачивается в swiper-slide -->
+    <div class="swiper-slide"><img src="images/car1.jpg" alt="Фото 1"></div>
+    <div class="swiper-slide"><img src="images/car2.jpg" alt="Фото 2"></div>
+    <div class="swiper-slide"><img src="images/car3.jpg" alt="Фото 3"></div>
+  </div>
+  <!-- Элементы управления (по желанию) -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
     <div class="taplink-container">
-        
         <!-- Шапка профиля -->
         <header class="profile">
             <img src="images/avatar.jpg" alt="Логотип" class="avatar">
@@ -23,9 +34,6 @@
             <a href="https://t.me/Ismail_0895" class="action-btn tg-btn">💬 Telegram</a>
             <a href="https://wa.me/79852892812" class="action-btn wa-btn">🟢 WhatsApp</a>
         </div>
-
-        <!-- Разделитель -->
-        <h2 class="section-title">Наш ассортимент автомобилей</h2>
 
         <main class="products-grid">
             
@@ -53,39 +61,11 @@
                     <a href="https://t.me?text=Хочу_купить_Автомобиль" class="buy-btn">Заказать авто</a>
                 </div>
             </div>
-
-        </main>
-        <!-- Заголовок каталога, к которому ведет первая кнопка -->
-        <h2 id="catalog" style="font-size: 18px; color: #333; margin: 30px 0 15px 0; border-left: 4px solid #111; padding-left: 10px;">
-            Наш ассортимент
-        </h2>
-
-        <!-- Витрина товаров в две колонки -->
-        <main class="products-grid">
-            
-            <!-- Карточка товара 1 -->
             <div class="product-card">
-                <img src="images/product1.jpg" alt="Товар 1" class="product-img">
+                <img src="images/product1.jpg" alt="Авто 4" class="product-img">
                 <div class="product-info">
-                    <h3 class="product-name">Авто 1</h3>
-                    <p class="product-price">256 ₽</p>
-                    <a href="https://t.me" class="buy-btn">Купить</a>
+                    <h3 class="product-name">порш 911 Рестайлинг, 2019</h3>
+                    <p class="product-price">2.900.000 ₽</p>
+                    <a href="https://t.me?text=Хочу_купить_Автомобиль" class="buy-btn">Заказать</a>
                 </div>
             </div>
-
-            <!-- Карточка товара 2 -->
-            <div class="product-card">
-                <img src="images/product2.jpg" alt="Товар 2" class="product-img">
-                <div class="product-info">
-                    <h3 class="product-name">Авто 2</h3>
-                    <p class="product-price">233 ₽</p>
-                    <a href="https://t.me" class="buy-btn">Купить</a>
-                </div>
-            </div>
-
-        </main>
-
-    </div>
-
-</body>
-</html>
