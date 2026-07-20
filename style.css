@@ -5,10 +5,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #f8f9fa; /* Светлый премиальный фон */
     display: flex;
-    justify-content: center;
+    flex-direction: column;   /* Элементы будут идти сверху вниз, а не вбок */
+    align-items: center;      /* Центрируем все блоки по горизонтали */
     min-height: 100vh;
 }
-
 /* 2. Контейнер сайта (мобильная ширина по центру) */
 .taplink-container {
     width: 100%;
@@ -76,8 +76,11 @@ h1 { font-size: 20px; margin: 10px 0 5px; color: #222; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    width: 100%;             /* Занимает всю ширину на мобильном */
+    max-width: 480px;        /* Ограничение ширины под размер контактов */
+    box-sizing: border-box;
+    padding: 0 15px 30px;    /* Отступы по бокам и снизу */
 }
-
 /* Стиль самой карточки товара */
 .product-card {
     background: white;
@@ -141,7 +144,9 @@ h1 { font-size: 20px; margin: 10px 0 5px; color: #222; }
     max-width: 500px;         /* Ограничиваем ширину, чтобы на ПК не растягивался */
     height: 350px;            /* Фиксированная высота для фото */
     border-radius: 12px;      /* Скругление углов, как на авто.ру */
-    margin: 20px auto;        /* Центрируем слайдер по горизонтали */
+    margin: 20px auto;  
+    min-width: 0;
+    min-height: 0;      /* Центрируем слайдер по горизонтали */
 }
 
 /* Настройки картинок внутри слайдов */
